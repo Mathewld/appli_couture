@@ -8,6 +8,9 @@ myvenv\Scripts\activate
 # ... ou sous linux
 source myvenv/bin/activate
 
+# créer super utilisateur
+python manage.py createsuperuser
+
 # lancer l'application
 python manage.py runserver
 ```
