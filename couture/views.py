@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def pattern_list(request):
+    return render(request, 'couture/pattern_list.html', {})
