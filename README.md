@@ -8,6 +8,12 @@ myvenv\Scripts\activate
 # ... ou sous linux
 source myvenv/bin/activate
 
+# migrer la base de données
+python manage.py migrate
+
+# charger de fausses données en base
+python manage.py loaddata **/fixtures/*.json
+
 # créer super utilisateur
 python manage.py createsuperuser
 
