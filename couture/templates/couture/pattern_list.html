@@ -1,9 +1,24 @@
+{% load staticfiles %}
 <html>
     <head>
-        <title>Appli couture</title>
+      <title>Appli couture</title>
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="{% static 'css/couture.css' %}">
+      <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <p>Bienvenue</p>
-        <p>Sur l'appli couture !</p>
+      <div class="page-header">
+        <h1><a href="/">
+          <p>Bienvenue</p>
+          <p>Sur l'appli couture !</p>
+        </a></h1>
+      </div>
+
+        {% for pattern in patterns %}
+        <div class="pattern">
+          <h1><a href="">{{ pattern }}</a></h1>
+        </div>
+        {% endfor %}
     </body>
 </html>
